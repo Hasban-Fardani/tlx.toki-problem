@@ -15,3 +15,6 @@ diinisiasi oleh Ikatan Alumni Tim Olimpiade Komputer Indonesia (IA TOKI), TLX Tr
 ### Di repository ini bakal di isi tentang apa?
 dokumentasi problem problem yang sudah saya selesaikan
 
+## History Submission
+jika anda ingin melihat history submission saya silahkan klik link [ini](https://tlx.toki.id/profiles/hasban/submission-history)  
+

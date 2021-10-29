@@ -14,5 +14,3 @@ if "*" in kata:
         for k in kata_lain:
             if k[0:i] == kata[0:i]:
                 print(k)
-
-    

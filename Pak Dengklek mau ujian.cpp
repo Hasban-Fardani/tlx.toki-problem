@@ -1,7 +1,5 @@
-/*
-soal : Pak Dengklek mau ujian
-link : https://tlx.toki.id/problems/ngoding-seru-2015-oct-pemula/B
-*/
+// link problem : https://tlx.toki.id/problems/ngoding-seru-2015-oct-pemula/B
+
 
 #include <iostream>
 using namespace std;

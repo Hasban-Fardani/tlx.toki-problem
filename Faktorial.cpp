@@ -15,7 +15,6 @@ int main() {
     int N;
     cin >> N;
 
-    // int f = faktorial(N);
     int banyak_nol = 0;
     while (N)
     {

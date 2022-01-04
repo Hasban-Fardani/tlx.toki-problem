@@ -1,7 +1,6 @@
 // link problem: https://tlx.toki.id/problems/osn-2006/A
 
 #include <iostream>
-#include <string>
 using namespace std;
 
 int faktorial(int n){
@@ -16,15 +15,12 @@ int main() {
     int N;
     cin >> N;
 
-    int f = faktorial(N);
+    // int f = faktorial(N);
     int banyak_nol = 0;
-
-    while (f >= 1){
-        if (f % 10 == 0){
-            banyak_nol++;
-            f/=10;
-        } else {
-            break;
-        }
+    while (N)
+    {
+        N /=5;
+        banyak_nol += N;
     }
+    cout << banyak_nol << endl;
 }

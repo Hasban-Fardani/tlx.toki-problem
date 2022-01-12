@@ -2,14 +2,11 @@
 using namespace std;
 
 int main(){
-int a = -5;
-if (a > 0) {
-    printf("one\n");
-} else if (a != 5) {
-    printf("two\n");
-} else if (a < 0) {
-    printf("three\n");
-} else {
-    printf("four\n");
-}
+int a = 45;
+int b = 56;
+do {
+    a = a - 3;
+    b = b - 5;
+} while ((a >= 0) || (b >= 0));
+printf("%d %d", a, b);
 }

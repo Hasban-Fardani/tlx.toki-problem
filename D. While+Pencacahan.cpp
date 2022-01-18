@@ -4,10 +4,10 @@ using namespace std;
 
 int main(){
     int N, result;
-    while (scanf("%s", N) != EOF)
+    result = 0;
+    while (cin >> N)
     {
         result += N;
-        cout << result << endl;
     }
-    
+    cout << result << endl;
 }

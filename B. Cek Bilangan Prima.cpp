@@ -1,30 +1,25 @@
-#include <cstdio>
+#include <iostream>
+#include <cmath>
+using namespace std;
 
-int main() {
-  int N;
-
-  scanf("%d", &N);
-  for (int i = 0; i < N; i++) {
-    int x;
-    scanf("%d", &x);
-
-    bool prime = true;
-    if (x == 1) {
-      prime = false;
+int i, j, n, bilangan, p=1;
+int main(){
+    cin >> n;
+    for (i=0; i<n; i++){
+        cin >> bilangan;
+        for (j=2; j<=trunc(sqrt(bilangan)); j++){
+            if (bilangan % j == 0){
+                p = 0;
+            } else {
+                p = 1;
+            }
+        }
+        if (p==0 || bilangan == 1){
+            cout << "BUKAN\n";
+            p = 1;
+        } else {
+            cout << "IYA\n";
+        }
     }
-
-    int divisor = 2;
-    while (divisor < x) {
-      if (x % divisor == 0) {
-        prime = false;
-      }
-      divisor++;
-    }
-
-    if (prime) {
-      printf("YA\n");
-    } else {
-      printf("BUKAN\n");
-    }
-  }
+    
 }

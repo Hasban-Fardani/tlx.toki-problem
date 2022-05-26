@@ -1,25 +1,30 @@
-#include <iostream>
+#include <stdio.h>
 #include <cmath>
-using namespace std;
 
-int i, j, n, bilangan, p=1;
-int main(){
-    cin >> n;
-    for (i=0; i<n; i++){
-        cin >> bilangan;
-        for (j=2; j<=trunc(sqrt(bilangan)); j++){
-            if (bilangan % j == 0){
-                p = 0;
-            } else {
-                p = 1;
+int main() {
+    int b, n, flag = 0;
+    scanf("%d", &b);
+    for (int i=0; i<b; i++){
+        scanf("%d", &n);
+
+        if (n == 0 || n == 1){
+            flag = 1;
+        }
+
+        for (int j = 2; j <= sqrt(n); j++) {
+            if (n % j == 0) {
+                flag = 1;
+                break;
             }
         }
-        if (p==0 || bilangan == 1){
-            cout << "BUKAN\n";
-            p = 1;
+
+        if (flag == 0) {
+            printf("YA\n");
         } else {
-            cout << "IYA\n";
+            printf("BUKAN\n");
         }
-    }
-    
+    flag = 0;
+  }
+
+  return 0;
 }
